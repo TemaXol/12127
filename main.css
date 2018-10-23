@@ -26,8 +26,10 @@ body {
   opacity:1;
 }
 .btn-settings:hover {
-  background: url(extra_clean_paper/button.png) center center no-repeat;
-  background-size: 35px;
+  background: url(extra_clean_paper/button.png)  no-repeat;
+  background-size: 45px;
+   background-position: 20px -90px, 30px 80px, 0px 0px;
+ background-repeat: no-repeat, no-repeat, repeat-x;
 }
 
 .btn-tag:hover {
@@ -44,10 +46,12 @@ body {
 }
 
 @keyframes animatedBird {
- from { background-position: 20px 20px, 30px 80px, 0 0; }
- to { background-position: 300px -90px, 30px 20px, 100% 0; }
+ from { background-position: 26px 20px, 0 0, 20% 0; }
+ to { background-position: 26px 40px, 0 0, 100% 0; }
+
+
 }
  
 .btn-settings { 
- animation: animatedBird 4s linear infinite;
+ animation: animatedBird 1s  linear infinite;
 }
