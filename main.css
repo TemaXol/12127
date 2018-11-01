@@ -1,6 +1,6 @@
 body {
   background: url(../extra_clean_paper/extra_clean_paper.png);
-
+  
 }
 
 .button {
@@ -32,10 +32,7 @@ body {
  background-repeat: no-repeat, no-repeat, repeat-x;
 }
 
-.btn-tag:hover {
-  background: url(extra_clean_paper/button.png) center center no-repeat;
-  background-size: 35px;
-}
+
  a img {
   max-width: 40px;
   position: relative;
@@ -54,4 +51,81 @@ body {
  
 .btn-settings { 
  animation: animatedBird 1s  linear infinite;
+}
+
+.arrow {
+  position: absolute;
+  left: 48.7%;
+}
+.arrow-first {
+  content: '';
+  width: 25px;
+  height: 25px;
+  top: 25%;
+  margin: -20px 0 0 -20px;
+  -webkit-transform: rotate(45deg);
+  border-left: none;
+  border-top: none;
+  border-right: 7px #7c6be0 solid;
+  border-bottom: 7px #7c6be0 solid;
+  border-radius: 5px;
+  animation-duration: 1.7s;
+  animation-iteration-count: infinite;
+  animation-name: arrow-first;
+  animation-timing-function: ease-out;
+
+}
+
+.arrow-second {
+  content: '';
+  width: 12px;
+  height: 12px;
+  top: 25%;
+  margin: -25px 0 0 -12px;
+  border-left: none;
+  border-top: none;
+  -webkit-transform: rotate(45deg);
+  border-right: 4px #000 solid;
+  border-bottom: 4px #000 solid;
+  animation-duration: 1.7s;
+  animation-iteration-count: infinite;
+  animation-name: arrow-second;
+  border-radius: 2px;
+  animation-timing-function: ease-out;
+}
+
+@keyframes arrow-first {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+    transform: translate(0, 16px) rotate(45deg);
+  }
+  75% {
+    opacity: 0.5;
+    transform: translate(0, 18px) rotate(45deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0, 26px) rotate(45deg);
+  }
+}
+@keyframes arrow-second {
+  0% {
+    opacity: 1;
+   
+  }
+  50% {
+    opacity: 1;
+    transform: translate(0, 20px) rotate(45deg);
+  }
+  75% {
+    opacity: 0.5;
+     transform: translate(0, 25px) rotate(45deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0, 35px) rotate(45deg);
+  }
 }
