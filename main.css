@@ -11,6 +11,7 @@ body {
   background: url(../extra_clean_paper/extra_clean_paper.png);
   cursor: pointer;
   border-radius: 50%;
+  position: relative;
 
   box-shadow: 0 3px 20px rgba(0,0,0,.05),
   0 5px 20px rgba(0,0,0,0.4);
@@ -34,7 +35,7 @@ body {
 
 
  a img {
-  max-width: 40px;
+  max-width: 5px;
   position: relative;
   top: 0px;
   margin: 25px 25px 111px 29px;
@@ -57,75 +58,67 @@ body {
   position: absolute;
   left: 48.7%;
 }
-.arrow-first {
-  content: '';
-  width: 25px;
-  height: 25px;
-  top: 25%;
+.button2 {
+  width: 50px;
+  height: 27px;
+  top: 19%;
   margin: -20px 0 0 -20px;
-  -webkit-transform: rotate(45deg);
-  border-left: none;
-  border-top: none;
-  border-right: 7px #7c6be0 solid;
-  border-bottom: 7px #7c6be0 solid;
-  border-radius: 5px;
-  animation-duration: 1.7s;
-  animation-iteration-count: infinite;
-  animation-name: arrow-first;
+  animation-duration: 1.7s, 2s;
+  animation-iteration-count:   infinite;
+  animation-name: button2;
   animation-timing-function: ease-out;
+  margin: 10px 0 0 24px;
+   position: absolute;
+   border-radius: 8px;
 
 }
 
-.arrow-second {
-  content: '';
-  width: 12px;
-  height: 12px;
+.button1 {
+  width: 23px;
+  height: 20px;
   top: 25%;
-  margin: -25px 0 0 -12px;
-  border-left: none;
-  border-top: none;
-  -webkit-transform: rotate(45deg);
-  border-right: 4px #000 solid;
-  border-bottom: 4px #000 solid;
-  animation-duration: 1.7s;
-  animation-iteration-count: infinite;
-  animation-name: arrow-second;
-  border-radius: 2px;
+  animation-duration: 1.7s, 2s;
+  animation-iteration-count:  infinite;
+  animation-name: button1;
+  border-radius: 8px;
   animation-timing-function: ease-out;
+ margin: -7px 0 -22px 37px;
+ position: absolute;
+
 }
 
-@keyframes arrow-first {
+@keyframes  button2 {
   0% {
     opacity: 1;
   }
   50% {
     opacity: 1;
-    transform: translate(0, 16px) rotate(45deg);
+    transform: translate(0, 16px) ;
   }
   75% {
     opacity: 0.5;
-    transform: translate(0, 18px) rotate(45deg);
+    transform: translate(0, 18px);
   }
   100% {
     opacity: 0;
-    transform: translate(0, 26px) rotate(45deg);
+    transform: translate(0, 26px) ;
   }
 }
-@keyframes arrow-second {
+@keyframes button1 {
   0% {
     opacity: 1;
    
   }
   50% {
     opacity: 1;
-    transform: translate(0, 20px) rotate(45deg);
+    transform: translate(0, 20px) ;
   }
   75% {
     opacity: 0.5;
-     transform: translate(0, 25px) rotate(45deg);
+     transform: translate(0, 25px) ;
   }
   100% {
     opacity: 0;
-    transform: translate(0, 35px) rotate(45deg);
+    transform: translate(0, 35px);
   }
 }
